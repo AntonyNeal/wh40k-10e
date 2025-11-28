@@ -5,13 +5,13 @@ const phases = [
     buttonLabel: "Command",
     title: "Command Phase",
     description:
-      "World Eaters have no psychic phase and minimal command tricks. This is where you pull ahead. Bank CP, count Cabal points, and remember: every turn Luca doesn't reach combat is a turn you're winning.",
+      "🧩 RIDDLE: What has no magic but fears the wise? Luca's army. You have psychic powers, he has none. This phase is free points for you.",
     points: [
-      "Collect Cabal points: Magnus (4), Sorcerers in TDA (2 each), Infernal Master (1), Exalted Sorcerer (2).",
-      "Check if Terminators can deep strike this turn (T2+). Plan arrival zones behind Luca's push.",
-      "Score primary if holding objectives. Rubrics are sticky—don't forget!",
+      "Count your Cabal points: Magnus gives 4, each Sorcerer gives 2, Infernal Master gives 1.",
+      "Is it Turn 2 or later? Your Terminators can appear from reserves!",
+      "Are you on an objective? Score it now.",
     ],
-    tip: "Tip: World Eaters want to rush. Every phase you delay combat, you win. Be patient, score points, let them come.",
+    tip: "🎯 REMEMBER: Every turn he can't hit you = you're winning.",
   },
   {
     id: "movement",
@@ -19,13 +19,13 @@ const phases = [
     buttonLabel: "Movement",
     title: "Movement Phase",
     description:
-      "Movement wins this matchup. Magnus FLIES—stay 13\" from Berzerkers and they can never touch you. Screen with Screamers and Spawn. Make Luca waste movement chasing ghosts.",
+      "🧩 RIDDLE: What flies high while axes swing at air? Magnus. He can fly over everything. Berzerkers can only walk 6 inches. Stay far away!",
     points: [
-      "Magnus: Stay airborne, stay 13\"+ from threats. Smite range is 18\"—you don't need to be close.",
-      "Rhino: Advance midboard T1 to screen Magnus. Rubrics disembark T2 to claim objectives.",
-      "Screamers/Spawn: Spread wide. Force Berzerkers to charge THEM instead of valuable units.",
+      "Magnus: Stay MORE than 12 inches from enemies. They can't charge you!",
+      "Screamers and Spawn: Put them in front as a wall. If Luca hits them, he's not hitting Magnus.",
+      "Rhino: Drive it forward to block line of sight to your good stuff.",
     ],
-    tip: "Tip: If Luca charges your chaff, he's not charging Magnus. Trade 75pts of Screamers for a full turn of shooting.",
+    tip: "🎯 REMEMBER: 13 inches = safety. Berzerkers charge 12 inches max.",
   },
   {
     id: "shooting",
@@ -33,13 +33,13 @@ const phases = [
     buttonLabel: "Shooting",
     title: "Shooting Phase",
     description:
-      "World Eaters have almost NO shooting. This phase is entirely yours. Spend Cabal points freely—Doombolt, Twist of Fate, Temporal Surge. Every dead Berzerker is one less chainaxe in your face.",
+      "🧩 RIDDLE: What bleeds from afar but never bleeds back? Luca's army. He has almost NO shooting. You have ALL the shooting. This is YOUR phase.",
     points: [
-      "Priority targets: Characters first (Lord on Juggernaut removes terrain-ignore), then Berzerkers.",
-      "Inferno Boltguns from SOT: AP-2 shreds 3+ saves. Focus fire—half-dead squads still fight at full strength.",
-      "Warpflamers: Save Overwatch for his charge phase. D6+2 auto-hits EACH will delete charging Berzerkers.",
+      "Kill his characters first—they make his army stronger.",
+      "Kill Berzerkers second—every dead one is one less axe.",
+      "DON'T use Warpflamers now. SAVE them for Overwatch when he charges!",
     ],
-    tip: "Tip: Luca's army shrinks every shooting phase. Yours doesn't. Attrition is your friend.",
+    tip: "🎯 REMEMBER: His army gets smaller. Yours doesn't. Shoot everything.",
   },
   {
     id: "charge",
@@ -47,13 +47,13 @@ const phases = [
     buttonLabel: "Charge",
     title: "Charge Phase",
     description:
-      "YOU should rarely charge. Let LUCA charge into your Overwatch. Warpflamers auto-hit on Overwatch. Berzerkers are T4 3+—they die to massed flamers before swinging.",
+      "🧩 RIDDLE: What wants to run INTO the fire? Berzerkers. LET THEM. Your Warpflamers auto-hit on Overwatch. He runs in, he burns.",
     points: [
-      "Overwatch with Warpflamer Rubrics: Each model fires D6+2 auto-hitting S4 AP-1 shots. Devastating.",
-      "If SOT must charge (to trap a unit), ensure you have Cabal for Temporal Surge to position first.",
-      "Magnus should NEVER charge Berzerkers or Angron. Fly away, smite, repeat.",
+      "DO NOT CHARGE. Let HIM charge YOU.",
+      "When he declares a charge, use Overwatch with Warpflamers.",
+      "Each flamer shoots D6+2 auto-hitting shots. 10 flamers = 80+ hits. He dies before reaching you.",
     ],
-    tip: "Tip: 'Fight on death' means Berzerkers swing when they die. Don't charge them—shoot them off the board instead.",
+    tip: "🎯 REMEMBER: You have 1 CP saved for Overwatch, right? RIGHT?",
   },
   {
     id: "fight",
@@ -61,13 +61,13 @@ const phases = [
     buttonLabel: "Fight",
     title: "Fight Phase",
     description:
-      "If you're in combat with World Eaters, something went wrong. SOT can trade into weakened squads, but avoid fresh Berzerkers. Fight First and interrupts matter—sequence carefully.",
+      "🧩 RIDDLE: What wins by not fighting? You. If you're in combat with Berzerkers, something went wrong. They fight better than you. Avoid this.",
     points: [
-      "SOT fight well but Berzerkers fight better. Only engage damaged units or chaff.",
-      "If Magnus is tagged, Fall Back next turn (he can still shoot/cast after falling back with psychic powers).",
-      "World Eaters get +1 attack when charging—never let them charge if avoidable.",
+      "If Magnus is stuck in combat, Fall Back next turn. He can still cast spells after falling back!",
+      "Terminators CAN fight, but only against stuff that's already hurt.",
+      "BEWARE: Berzerkers fight when they die. Even dead ones swing back!",
     ],
-    tip: "Tip: Pile in toward objectives, consolidate onto points. OC wins games, not kills.",
+    tip: "🎯 REMEMBER: You win on points, not kills. Stay on objectives.",
   },
   {
     id: "battleshock",
@@ -75,13 +75,13 @@ const phases = [
     buttonLabel: "Battleshock",
     title: "Battleshock Phase",
     description:
-      "World Eaters are often small elite squads—Battleshock rarely affects them. Focus on your own morale. Rubrics are sticky and auto-pass Battleshock on objectives you control.",
+      "🧩 RIDDLE: What holds ground even when gone? Rubrics. Your Rubrics have STICKY objectives. Once you capture a point, it stays yours even if you walk away.",
     points: [
-      "Check which objectives are sticky-capped by Rubrics. They hold even if you leave.",
-      "Score VP—count carefully. World Eaters score by killing, you score by holding.",
-      "Recount Cabal points for next turn. Plan deep strike arrivals.",
+      "Check your score. Are you ahead? GOOD. Keep running away.",
+      "Rubrics on objectives = those points are YOURS.",
+      "Plan next turn. Where will Terminators drop? What will Magnus shoot?",
     ],
-    tip: "Tip: If you're ahead on points, play keep-away. Luca has to come to you—make him pay for every inch.",
+    tip: "🎯 REMEMBER: If you're ahead, play keep-away. Make Luca chase you.",
   },
 ];
 

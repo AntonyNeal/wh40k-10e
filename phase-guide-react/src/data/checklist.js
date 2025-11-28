@@ -1,35 +1,35 @@
 const checklistItems = [
   {
     id: "screen",
-    label: "Deploy screens (Screamers, Spawn, Rhino) between Magnus and Berzerkers.",
+    label: "🛡️ WALL UP: Put Screamers, Spawn, and Rhino in FRONT of Magnus.",
   },
   {
     id: "distance",
-    label: "Confirm Magnus is 13\"+ from all threats (can't be charged).",
+    label: "📏 13 INCHES: Is Magnus more than 12 inches from danger? Good. Stay there.",
   },
   {
     id: "deepstrike",
-    label: "T2+: Drop both SOT units behind Luca's advancing army.",
+    label: "🎯 TURN 2 SURPRISE: Drop Terminators BEHIND Luca's army. He pushed forward, now he's trapped.",
   },
   {
     id: "overwatch",
-    label: "Save CP for Warpflamer Overwatch when Berzerkers charge.",
+    label: "🔥 SAVE 1 CP: You need it for Warpflamer Overwatch when he charges.",
   },
   {
     id: "kite",
-    label: "Never let Magnus or characters get caught in melee.",
+    label: "🏃 RUN AWAY: Magnus should NEVER be in combat. Fly away, always.",
   },
   {
     id: "objectives",
-    label: "Sticky-cap objectives with Rubrics—they hold even when you leave.",
+    label: "📍 STICKY POINTS: Rubrics capture objectives forever. Touch it once, it's yours.",
   },
   {
     id: "killpriority",
-    label: "Kill order: Lord on Juggernaut → Berzerkers → Angron (if present) → chaff.",
+    label: "💀 KILL ORDER: Characters first → Berzerkers second → Ignore Angron until last.",
   },
   {
     id: "score",
-    label: "Count VP every turn. If ahead, play keep-away and force Luca to chase.",
+    label: "🏆 COUNT POINTS: Ahead on score? Just keep running. Luca has to chase you.",
   },
 ];
 

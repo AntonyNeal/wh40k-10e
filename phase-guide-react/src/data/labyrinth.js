@@ -1,66 +1,66 @@
 const labyrinthNodes = [
   {
     id: "gameplan",
-    title: "The Pincer Protocol",
+    title: "🧩 The Trap",
     body:
-      "Turn 1: Castle. Rhino screens Magnus, chaff spreads wide. Let Luca push forward into no-man's land. Turn 2: Both Terminator bombs arrive BEHIND his army. He pushed forward—now his backline is dust. Turn 3+: He's trapped between Magnus ahead and Terminators behind. Nowhere to go. Score points, kite, win.",
-    suspicions: ["Luca will realize too late.", "The trap only works if you're patient T1.", "Deep strike positioning is everything."],
+      "RIDDLE: What moves forward into a closing cage? Luca's army.\n\nTURN 1: Sit back. Let Luca run forward.\nTURN 2: Drop Terminators BEHIND him.\nTURN 3+: He's stuck between Magnus in front and Terminators behind. Score points and win.",
+    suspicions: ["Be PATIENT turn 1.", "The trap closes turn 2.", "Don't chase—let him come to you."],
     references: ["terminators", "magnus", "mission"],
   },
   {
     id: "terminators",
-    title: "The Double Anvil",
+    title: "🔨 Two Hammers",
     body:
-      "Two Terminator units. Two Sorcerers. Two points of arrival. Luca cannot screen both flanks AND push forward. One will land clean. 10-man deletes whatever it touches. 5-man threatens the other side. He has to choose what dies.",
-    suspicions: ["Split them to opposite corners.", "10-man hits his biggest threat.", "5-man grabs backfield objectives."],
+      "RIDDLE: What strikes from two sides at once? Your Terminators.\n\nYou have TWO groups:\n• 10 Terminators = the BIG hammer\n• 5 Terminators = the small hammer\n\nDrop them on OPPOSITE sides of the board. Luca can't stop both.",
+    suspicions: ["Big squad kills his best unit.", "Small squad grabs his backfield.", "Split them far apart."],
     references: ["gameplan", "deepstrike"],
   },
   {
     id: "magnus",
-    title: "The Unkillable Kite",
+    title: "🦅 The Flying Giant",
     body:
-      "Magnus flies. Berzerkers don't. Stay 13\" away and they can NEVER charge you. 18\" smite range means you're always in range to hurt them. If Angron appears, just kite him too—he's fast but Magnus is faster with proper positioning.",
-    suspicions: ["Never land Magnus within charge range.", "Use ruins and vertical movement.", "He's bait AND the hammer—depending on what Luca does."],
+      "RIDDLE: What floats above while axes swing at nothing? Magnus.\n\nMagnus FLIES. Berzerkers WALK.\nStay 13+ inches away = they can NEVER touch you.\nSmite range is 18 inches = you're always in range to hurt them.",
+    suspicions: ["13 inches = safety zone.", "Use buildings to gain height.", "Never land near Berzerkers."],
     references: ["angron", "gameplan"],
   },
   {
     id: "angron",
-    title: "Dealing with Angron",
+    title: "😈 The Scary One",
     body:
-      "If Luca brings Angron (435pts), don't panic. Angron alone cannot win the game. Kite him with Magnus, let Terminators delete everything else. By Turn 4, Angron is standing alone on a battlefield of dust. He can kill one unit per turn—you have more units than turns.",
-    suspicions: ["Angron returns when killed—don't waste resources overkilling.", "He's scary but he's only one model.", "Score while he chases."],
+      "RIDDLE: What chases endlessly but catches only dust? Angron.\n\nIF LUCA BRINGS ANGRON:\n• Don't panic\n• IGNORE HIM\n• Kill everything else\n• Angron alone can't win the game\n• He kills one unit per turn—you have more units than turns",
+    suspicions: ["Angron comes back when killed—don't waste shots on him.", "He's just one model.", "Let him chase Magnus forever."],
     references: ["magnus", "mission"],
   },
   {
     id: "deepstrike",
-    title: "Deep Strike Doctrine",
+    title: "⚡ The Surprise",
     body:
-      "Turn 2 is your moment. Luca's army pushed forward Turn 1—his backfield is exposed. Both SOT units arrive 9\" from his Jakhals, his characters, his home objective. Psychic powers + Inferno Boltguns delete whatever you target. Then you're in HIS deployment zone.",
-    suspicions: ["Measure carefully—9\" is farther than it looks.", "Target characters first if possible.", "Don't scatter both units together—spread the threat."],
+      "RIDDLE: What appears from nowhere when the enemy looks away? Your Terminators.\n\nTURN 2 = SURPRISE TIME:\n• Luca pushed forward\n• His backfield is EMPTY\n• Drop Terminators 9 inches from his stuff\n• Shoot. Kill. Win.",
+    suspicions: ["9 inches is farther than it looks—measure twice!", "Kill characters first.", "Put the two squads far apart."],
     references: ["terminators", "gameplan"],
   },
   {
     id: "warpflamers",
-    title: "The Overwatch Trap",
+    title: "🔥 The Fire Trap",
     body:
-      "Warpflamer Rubrics are BAIT. Let Luca charge them. In Overwatch, each model fires D6+2 auto-hitting S4 AP-1 shots. 10 models = 80+ auto-hitting shots on average. Berzerkers are T4 3+—half die before they swing. And they WANT to charge. Let them.",
-    suspicions: ["Position them where Luca wants to be.", "Keep Infernal Master attached for rerolls.", "Save 1 CP for Overwatch stratagem."],
+      "RIDDLE: What wants to be charged? Your Warpflamer Rubrics.\n\nWhen Luca charges them, you use OVERWATCH:\n• Each flamer shoots D6+2 times\n• They AUTO-HIT (no rolling!)\n• 10 flamers = about 80 hits\n• Berzerkers DIE before reaching you",
+    suspicions: ["SAVE 1 CP for Overwatch.", "Put them where Luca wants to go.", "Let him charge into the fire."],
     references: ["berzerkers", "gameplan"],
   },
   {
     id: "berzerkers",
-    title: "Know the Enemy: Berzerkers",
+    title: "⚔️ The Enemy",
     body:
-      "Berzerkers hit like trucks. S5 AP-1 chainaxes, +1 attack on charge. They FIGHT WHEN THEY DIE. But they're T4 3+—paper against massed fire. They're slow (6\" move). They have no shooting. Every Berzerker that dies to Inferno Boltguns is one less chainaxe in your face.",
-    suspicions: ["Don't charge them—shoot them.", "If you must fight, use SOT (they can tank some damage).", "Fight-on-death triggers even at 0 wounds—be aware."],
+      "RIDDLE: What dies from far but kills up close? Berzerkers.\n\nKNOW THIS:\n• They move only 6 inches (slow!)\n• They have NO shooting\n• They hit VERY hard in combat\n• They fight EVEN WHEN DEAD\n\nANSWER: Shoot them. Never charge them.",
+    suspicions: ["NEVER fight them if you can shoot instead.", "Dead Berzerkers still swing back—beware!", "They're scary in combat, weak to guns."],
     references: ["warpflamers", "deepstrike"],
   },
   {
     id: "mission",
-    title: "Mission Selection",
+    title: "🏆 How to Win",
     body:
-      "Pick missions that reward holding objectives over killing. Thousand Sons hold points with sticky OC. World Eaters want to fight—make them fight for nothing. 'Sites of Power' (characters score) is ideal—you have 6 characters, Luca has 2-3. 'Purge the Foe' works if you're confident in kill output.",
-    suspicions: ["Avoid kill-based secondaries if possible.", "Take objectives Luca abandons when he pushes forward.", "Sticky OC is your best friend."],
+      "RIDDLE: What wins without fighting? Holding objectives.\n\nBEST MISSION: Sites of Power\n• Only CHARACTERS score points\n• You have 6 characters\n• Luca has 2-3\n• You outscore him by just existing\n\nYour Rubrics have STICKY objectives—once captured, they stay yours.",
+    suspicions: ["Don't pick kill-based missions.", "Grab objectives Luca leaves behind.", "You win on POINTS, not kills."],
     references: ["gameplan", "angron"],
   },
 ];
