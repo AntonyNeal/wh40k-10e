@@ -1,9 +1,9 @@
 const checklistByTurn = {
   "pre-luca": [
-    { id: "pre-luca-assess", label: "👀 SPOT HIS THREATS: Daemon Prince (Warlord), Khârn, Eightbound, Forgefiend." },
-    { id: "pre-luca-rhino", label: "🚗 FIND THE RHINO: It has 10 Berzerkers + maybe Khârn inside." },
-    { id: "pre-luca-shooting", label: "🔫 HIS GUNS: Forgefiend + Helbrute. That's ALL his shooting." },
-    { id: "pre-luca-chaff", label: "🐀 IGNORE CHAFF: Jakhals, Goremongers, Spawn are just filler." },
+    { id: "pre-luca-assess", label: "👀 SPOT THREATS: Daemon Prince (Warlord), Khârn, Eightbound squads." },
+    { id: "pre-luca-count", label: "🔢 COUNT EIGHTBOUND: At 2000 pts he likely has 6+ of each type!" },
+    { id: "pre-luca-shooting", label: "🔫 HIS GUNS: Forgefiend + Helbrute + maybe more vehicles." },
+    { id: "pre-luca-rhino", label: "🚗 RHINOS: How many? Each might have Berzerkers inside." },
     { id: "pre-luca-backfield", label: "📍 HIS BACKFIELD: Mark where Terminators will drop Turn 2." },
   ],
   "pre-louis": [

@@ -9,7 +9,7 @@ const phases = [
     points: [
       "YOUR CABAL POINTS: You have 12 total. Luca has 0 psychic anything.",
       "Is it Turn 2+? Your Terminators can appear from reserves!",
-      "LUCA'S THREATS: Daemon Prince (Warlord), Khârn, Eightbound, Exalted Eightbound.",
+      "LUCA'S 2000 PT THREATS: Daemon Prince (Warlord), Khârn, MORE Eightbound, maybe Lord Invocatus.",
     ],
     rituals: [],
     tip: "🎯 His Daemon Prince has Helm of Brazen Ire—he's their lynchpin. Kill him Turn 2.",

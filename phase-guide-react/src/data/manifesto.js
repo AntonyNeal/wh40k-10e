@@ -1,11 +1,11 @@
 const manifesto = {
   army: "Thousand Sons vs World Eaters",
   mission:
-    "TELL LUCA: \"You pick the mission deck—Leviathan or Pariah Nexus.\" Then YOU pick Sites of Power. Only CHARACTERS score bonus VP. You have 6 characters; Luca has 3 (Daemon Prince, Khârn, Slaughterbound). Kill his characters Turn 2 and outscore him forever.",
+    "TELL LUCA: \"You pick the mission deck—Leviathan or Pariah Nexus.\" Then YOU pick Sites of Power. Only CHARACTERS score bonus VP. You have 6 characters; Luca has 3-4. Kill his characters Turn 2 and outscore him forever.",
   riddle:
-    "🧩 THE BIG RIDDLE: What runs forward but catches nothing? What swings axes at empty air? ANSWER: Luca's 1490 pts of angry melee—when you stay far away and shoot.",
+    "🧩 THE BIG RIDDLE: What runs forward but catches nothing? What swings axes at empty air? ANSWER: Luca's 2000 pts of angry melee—when you stay far away and shoot.",
   madness:
-    "LUCA'S LIST: Daemon Prince (Warlord, 220 pts), Khârn (85 pts), 10 Berzerkers in Rhino, 3 Eightbound, 3 Exalted Eightbound, Forgefiend + Helbrute (his ONLY shooting), Jakhals/Goremongers/Spawn (chaff). Kill the Prince + Khârn Turn 2. Kill Forgefiend. His army becomes a headless melee blob you kite forever.",
+    "LUCA'S CORE: Daemon Prince (Warlord, 220 pts), Khârn (85 pts), 10 Berzerkers in Rhino, Eightbound, Exalted Eightbound, Forgefiend + Helbrute. With 500 extra pts expect: MORE Eightbound, another vehicle, or a Lord Invocatus. Kill characters Turn 2. Kill his shooting. Kite forever.",
   directive:
     "THE PLAN:\n• TURN 1: Screen Magnus. Watch his Rhino. Maybe Screamers charge Forgefiend.\n• TURN 2: Drop Terminators. Kill Daemon Prince (Warlord) + Khârn.\n• TURN 3+: His characters dead. Kite, score, win.",
   socialHack:

@@ -3,8 +3,8 @@ const labyrinthNodes = [
     id: "gameplan",
     title: "🧩 The Trap",
     body:
-      "RIDDLE: What runs forward into a closing cage? Luca's army.\n\nLUCA'S LIST (1490 pts):\n• Daemon Prince (Warlord) + Khârn\n• 10 Berzerkers in Rhino\n• 3 Eightbound + 3 Exalted Eightbound\n• Forgefiend + Helbrute (his only shooting)\n• Jakhals, Goremongers, Spawn (chaff)\n\nTHE PLAN: Let him push. Drop Terminators behind. Trap closed.",
-    suspicions: ["Kill his Daemon Prince Turn 2—he's the Warlord.", "Forgefiend dies = his shooting dies.", "His chaff (Jakhals/Goremongers) just feeds Blessing of Khorne."],
+      "RIDDLE: What runs forward into a closing cage? Luca's army.\n\nLUCA'S 2000 PTS (likely):\n• Daemon Prince (Warlord) + Khârn + Slaughterbound\n• 10 Berzerkers in Rhino (maybe more squads)\n• Eightbound + Exalted Eightbound (maybe 6 of each!)\n• Forgefiend + Helbrute + maybe more vehicles\n• Jakhals, Goremongers, Spawn (chaff)\n\nTHE PLAN: Let him push. Drop Terminators behind. Trap closed.",
+    suspicions: ["Kill his Daemon Prince Turn 2—he's the Warlord.", "Expect MORE Eightbound at 2000 pts.", "His chaff (Jakhals/Goremongers) feeds Blessing of Khorne."],
     references: ["terminators", "magnus", "mission"],
   },
   {
@@ -35,8 +35,8 @@ const labyrinthNodes = [
     id: "eightbound",
     title: "😈 The Elite Killers",
     body:
-      "RIDDLE: What hits like a truck but walks into fire? Eightbound.\n\nLuca has TWO squads:\n• 3 Eightbound (150 pts)\n• 3 Exalted Eightbound (160 pts) - THESE ARE SCARIER\n\nExalted move 9\", hit harder. Both units fight on death. Solution: Warpflamer Overwatch. 10 flamers = 80 auto-hits. 3-model units evaporate.",
-    suspicions: ["They FIGHT when they die—never charge them!", "Overwatch is the answer.", "Exalted have better weapons—kill them first if possible."],
+      "RIDDLE: What hits like a truck but walks into fire? Eightbound.\n\nAt 2000 pts, expect MORE:\n• 3-6 Eightbound\n• 3-6 Exalted Eightbound - THESE ARE SCARIER\n\nExalted move 9\", hit harder. Both fight on death. Solution: Warpflamer Overwatch. 10 flamers = 80 auto-hits. Even 6-model squads get shredded.",
+    suspicions: ["At 2000 pts he probably has 6 of each!", "They FIGHT when they die—never charge them!", "Overwatch is your answer to ALL of them."],
     references: ["warpflamers", "berzerkers"],
   },
   {
