@@ -13,5 +13,3 @@ const manifesto = {
 };
 
 export default manifesto;
-
-export default manifesto;
