@@ -12,7 +12,7 @@ const phases = [
       "Are you on an objective? Score it now.",
     ],
     rituals: [],
-    tip: "🎯 REMEMBER: Save your Cabal points for Movement and Shooting phases!",
+    tip: "🎯 REMEMBER: Save your Cabal points for Shooting phase rituals!",
   },
   {
     id: "movement",
@@ -26,9 +26,7 @@ const phases = [
       "Screamers and Spawn: Put them in front as a wall. If Luca hits them, he's not hitting Magnus.",
       "Rhino: Drive it forward to block line of sight to your good stuff.",
     ],
-    rituals: [
-      { name: "Temporal Surge", cost: 6, when: "After you've finished moving all your units normally", effect: "Pick one of YOUR units within 24\" of a Psyker. That unit gets to move AGAIN (roll D6 for inches). Spend 12 Cabal instead? Get a full 6\" guaranteed. Use this to yoink an objective or escape!" },
-    ],
+    rituals: [],
     tip: "🎯 REMEMBER: 13 inches = safety. Berzerkers charge 12 inches max.",
   },
   {
@@ -41,14 +39,24 @@ const phases = [
     points: [
       "Kill his characters first—they make his army stronger.",
       "Kill Berzerkers second—every dead one is one less axe.",
-      "DON'T use Warpflamers now. SAVE them for Overwatch when he charges!",
+      "Warpflamers can shoot AND still Overwatch later! Burn them twice!",
+    ],
+    ritualsIntro: "At the START of your Shooting phase, your Psykers can attempt Rituals. Each Psyker can only attempt ONE ritual per turn, and each ritual can only be attempted ONCE per turn across your whole army.",
+    ritualsHowTo: [
+      "1. Pick a Psyker who hasn't done a ritual this turn",
+      "2. Pick a ritual no one else has done this turn",
+      "3. Roll 2D6 (this is your Psychic Test)",
+      "4. OPTIONAL: Spend Cabal Points to add to your roll (1 point = +1 to roll)",
+      "5. If your total equals or beats the ritual's cost, it works!",
+      "⚠️ WARNING: If you roll doubles or triples, that Psyker's unit takes D3 mortal wounds!"
     ],
     rituals: [
-      { name: "Destiny's Ruin", cost: 5, when: "Before you shoot at something important", effect: "Pick an enemy unit within 24\" of a Psyker. When you shoot at that unit this phase, re-roll hit rolls of 1. Spend 10 Cabal instead? Re-roll ALL misses!" },
-      { name: "Twist of Fate", cost: 9, when: "When shooting at Eightbound or vehicles", effect: "Pick an enemy unit within 24\" of a Psyker. Your guns get +1 AP against them (AP-1 becomes AP-2, etc). Spend 18 Cabal instead? Get +2 AP! Use this to shred tough armor." },
-      { name: "Doombolt", cost: 7, when: "To finish off a wounded unit or snipe a character", effect: "Pick an enemy within 24\" of a Psyker. They take D3 mortal wounds (no saves allowed!). Spend 14 Cabal instead? They take D3+3 mortal wounds. Free damage!" },
+      { name: "Temporal Surge", cost: 6, when: "To reposition a unit before shooting", effect: "Pick a friendly unit within 24\". They move D6\" (can't charge after). Score 10+? Move 6\" guaranteed!" },
+      { name: "Destiny's Ruin", cost: 5, when: "Before shooting your priority target", effect: "Pick an enemy within 24\". Re-roll 1s to hit against them. Score 10+? Re-roll ALL misses!" },
+      { name: "Doombolt", cost: 7, when: "To snipe characters or finish wounded units", effect: "Pick an enemy within 24\". They take D3 mortal wounds (no saves!). Score 11+? D3+3 instead!" },
+      { name: "Twist of Fate", cost: 9, when: "Against Eightbound or vehicles", effect: "Pick an enemy within 24\". +1 AP against them (AP-1 becomes AP-2). Score 12+? +2 AP!" },
     ],
-    tip: "🎯 REMEMBER: His army gets smaller. Yours doesn't. Shoot everything.",
+    tip: "🎯 TIP: With 12 Cabal Points, you can easily boost a 2D6 roll. Average roll is 7, so spend 2 points to guarantee Twist of Fate (9)!",
   },
   {
     id: "charge",
