@@ -6,7 +6,7 @@ const roster = {
       name: "Magnus the Red",
       points: 435,
       role: "Primarch & Warlord",
-      notes: "KITING ANGRON: Magnus flies 16\". Angron moves 12\". This means Magnus can ALWAYS stay out of Angron's charge range (12\" move + 12\" charge = 24\" max). Every turn: Move Magnus 13-14\" away, cast spells at Angron, then fly further if needed. Angron chases Magnus across the board doing NOTHING while your Terminators kill everything else. That's kiting—staying just out of reach while dealing damage.",
+      notes: "THE KITE KING: Magnus flies 16\". Berzerkers move 6\", Eightbound move 9\". Magnus can ALWAYS stay out of charge range. Every turn: Fly 13-14\" away from threats, cast spells, then reposition. The entire World Eaters army chases Magnus across the board doing NOTHING while your Terminators kill everything. That's kiting—staying just out of reach while dealing damage.",
     },
     {
       name: "Sorcerer in Terminator Armour + Scarab Occult Terminators (10)",

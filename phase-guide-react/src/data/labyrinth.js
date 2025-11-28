@@ -21,15 +21,15 @@ const labyrinthNodes = [
     body:
       "RIDDLE: What floats above while axes swing at nothing? Magnus.\n\nMagnus FLIES. Berzerkers WALK.\nStay 13+ inches away = they can NEVER touch you.\nSmite range is 18 inches = you're always in range to hurt them.",
     suspicions: ["13 inches = safety zone.", "Use buildings to gain height.", "Never land near Berzerkers."],
-    references: ["angron", "gameplan"],
+    references: ["eightbound", "gameplan"],
   },
   {
-    id: "angron",
-    title: "😈 The Scary One",
+    id: "eightbound",
+    title: "😈 The Scary Ones",
     body:
-      "RIDDLE: What chases endlessly but catches only dust? Angron.\n\nIF LUCA BRINGS ANGRON:\n• Don't panic\n• IGNORE HIM\n• Kill everything else\n• Angron alone can't win the game\n• He kills one unit per turn—you have more units than turns",
-    suspicions: ["Angron comes back when killed—don't waste shots on him.", "He's just one model.", "Let him chase Magnus forever."],
-    references: ["magnus", "mission"],
+      "RIDDLE: What moves fast and hits like a truck? Eightbound.\n\nEIGHTBOUND ARE DANGEROUS:\n• They move 9\" (faster than Berzerkers!)\n• They hit EXTREMELY hard\n• They're his elite killers\n\nANSWER: Shoot them from far. Use Twist of Fate (+AP) to cut through their saves.",
+    suspicions: ["Kill them BEFORE they reach you.", "Warpflamers on Overwatch shred them.", "They're expensive—killing them hurts Luca."],
+    references: ["magnus", "warpflamers"],
   },
   {
     id: "deepstrike",
@@ -61,7 +61,7 @@ const labyrinthNodes = [
     body:
       "RIDDLE: What wins without fighting? Holding objectives.\n\nBEST MISSION: Sites of Power\n• Only CHARACTERS score points\n• You have 6 characters\n• Luca has 2-3\n• You outscore him by just existing\n\nYour Rubrics have STICKY objectives—once captured, they stay yours.",
     suspicions: ["Don't pick kill-based missions.", "Grab objectives Luca leaves behind.", "You win on POINTS, not kills."],
-    references: ["gameplan", "angron"],
+    references: ["gameplan", "eightbound"],
   },
 ];
 
