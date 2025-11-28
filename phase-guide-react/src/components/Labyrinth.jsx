@@ -4,9 +4,10 @@ import labyrinthNodes from "../data/labyrinth.js";
 const Labyrinth = () => {
   const [activeNodeId, setActiveNodeId] = useState(labyrinthNodes[0]?.id ?? "");
 
+  // Shuffle only once on mount - never reshuffle
   const shuffledNodes = useMemo(() => {
     return [...labyrinthNodes].sort(() => Math.random() - 0.5);
-  }, [activeNodeId]);
+  }, []);
 
   const activeNode = labyrinthNodes.find((node) => node.id === activeNodeId) ?? labyrinthNodes[0];
 

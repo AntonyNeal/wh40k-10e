@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import roster from "../data/roster.js";
 
 const RosterPanel = () => {
@@ -27,6 +28,10 @@ const RosterPanel = () => {
           </article>
         ))}
       </div>
+      
+      <Link to="/phases" className="roster__next-link">
+        ⚔️ Next: Turn-by-Turn Phase Guide →
+      </Link>
     </section>
   );
 };

@@ -1,6 +1,12 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Hero = ({ onCycle }) => {
+const Hero = () => {
+  const navigate = useNavigate();
+
+  const goToInitiation = () => {
+    navigate("/initiation");
+  };
+
   return (
     <header className="hero">
       <div className="hero__content">
@@ -16,19 +22,14 @@ const Hero = ({ onCycle }) => {
         <p className="hero__obfus">
           Watermark trace: D.A.I.D.A.R.A.//BØTCHI.MYST.9. Most operatives skim past those initials. You should not.
         </p>
-        <div className="hero__actions">
-          <button type="button" id="cycleFocus" className="ghost" onClick={onCycle}>
-            Cycle augury focus
-          </button>
-          <Link to="/phases" className="primary">
-            Jump to breakdown
-          </Link>
-        </div>
       </div>
       <div className="hero__illust" aria-hidden="true">
         <div className="sigil sigil--outer"></div>
         <div className="sigil sigil--inner"></div>
-        <span className="sigil__dot"></span>
+        <span className="planet planet--gold"></span>
+        <span className="planet planet--silver"></span>
+        <span className="planet planet--silver planet--small"></span>
+        <button type="button" className="sigil__dot sigil__dot--clickable" onClick={goToInitiation} aria-label="Go to mission briefing"></button>
       </div>
     </header>
   );

@@ -2,13 +2,13 @@ import PhaseSelector from "../components/PhaseSelector.jsx";
 import PhaseCard from "../components/PhaseCard.jsx";
 
 const PhasesPage = ({ phases, activePhaseId, onSelectPhase }) => {
+  const activePhase = phases.find((phase) => phase.id === activePhaseId);
+
   return (
     <main className="page" aria-label="Phase-by-phase breakdown">
       <PhaseSelector phases={phases} activePhaseId={activePhaseId} onSelect={onSelectPhase} />
-      <section id="phase-cards" className="phase-grid" aria-live="polite">
-        {phases.map((phase) => (
-          <PhaseCard key={phase.id} phase={phase} isActive={phase.id === activePhaseId} />
-        ))}
+      <section id="phase-cards" aria-live="polite">
+        {activePhase && <PhaseCard phase={activePhase} isActive={true} />}
       </section>
     </main>
   );
