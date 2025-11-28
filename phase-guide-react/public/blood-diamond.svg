@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Blood diamond">
+  <defs>
+    <linearGradient id="cut" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b81" />
+      <stop offset="45%" stop-color="#ff1f55" />
+      <stop offset="100%" stop-color="#8c002a" />
+    </linearGradient>
+    <linearGradient id="flare" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.85)" />
+      <stop offset="45%" stop-color="rgba(255,255,255,0.2)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#050109" />
+  <g transform="translate(8 8)">
+    <path d="M24 0h8l16 16-20 32h-8L0 16 16 0Z" fill="url(#cut)" />
+    <path d="M24 0h8l10 10L24 48h-4L6 10 16 0Z" fill="url(#flare)" />
+    <path d="M24 0 12 16l8 32" stroke="#ff8b9f" stroke-width="1.5" opacity="0.35" />
+    <path d="M32 0 44 16l-8 32" stroke="#ff3463" stroke-width="1.5" opacity="0.4" />
+    <path d="M0 16h48" stroke="#ff4d7a" stroke-width="1.25" opacity="0.4" />
+  </g>
+</svg>

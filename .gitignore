@@ -18,5 +18,10 @@
 
 # Don't ignore .yml for CI build definitions
 !*.yml
+!/phase-guide-react
+!/phase-guide-react/**
+!serve-phase-guide.ps1
+/phase-guide-react/node_modules/
+/phase-guide-react/dist/
 Chaos - Renegade Militarum.cat
 Zephyran Corsairs.cat
