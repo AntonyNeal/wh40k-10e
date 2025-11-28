@@ -1,71 +1,67 @@
 const labyrinthNodes = [
   {
+    id: "gameplan",
+    title: "The Pincer Protocol",
+    body:
+      "Turn 1: Castle. Rhino screens Magnus, chaff spreads wide. Let Luca push forward into no-man's land. Turn 2: Both Terminator bombs arrive BEHIND his army. He pushed forward—now his backline is dust. Turn 3+: He's trapped between Magnus ahead and Terminators behind. Nowhere to go. Score points, kite, win.",
+    suspicions: ["Luca will realize too late.", "The trap only works if you're patient T1.", "Deep strike positioning is everything."],
+    references: ["terminators", "magnus", "mission"],
+  },
+  {
+    id: "terminators",
+    title: "The Double Anvil",
+    body:
+      "Two Terminator units. Two Sorcerers. Two points of arrival. Luca cannot screen both flanks AND push forward. One will land clean. 10-man deletes whatever it touches. 5-man threatens the other side. He has to choose what dies.",
+    suspicions: ["Split them to opposite corners.", "10-man hits his biggest threat.", "5-man grabs backfield objectives."],
+    references: ["gameplan", "deepstrike"],
+  },
+  {
     id: "magnus",
-    title: "Screen Burn // Magnus",
+    title: "The Unkillable Kite",
     body:
-      "He left fingerprints on the liquid crystal and they never cooled. Whoever is reading this, do not scrape them away. They point toward objectives that exist only when he looks at them.",
-    suspicions: ["Probably Julian.", "Or the hacker who keeps renaming my desktop.", "Or Magnus."],
-    references: ["ritual", "extraction"],
+      "Magnus flies. Berzerkers don't. Stay 13\" away and they can NEVER charge you. 18\" smite range means you're always in range to hurt them. If Angron appears, just kite him too—he's fast but Magnus is faster with proper positioning.",
+    suspicions: ["Never land Magnus within charge range.", "Use ruins and vertical movement.", "He's bait AND the hammer—depending on what Luca does."],
+    references: ["angron", "gameplan"],
   },
   {
-    id: "ritual",
-    title: "Ritual Cache 7",
+    id: "angron",
+    title: "Dealing with Angron",
     body:
-      "Seven shell companies. Seven false icons. Seven Rubric Marines whispering the same password. Turn any of them off and the whole plan keeps running. That's the frightening part.",
-    suspicions: ["Not me.", "Feels like Tzeentch kept the receipts.", "Why would a human write like this?"],
-    references: ["scarab", "goad"],
+      "If Luca brings Angron (435pts), don't panic. Angron alone cannot win the game. Kite him with Magnus, let Terminators delete everything else. By Turn 4, Angron is standing alone on a battlefield of dust. He can kill one unit per turn—you have more units than turns.",
+    suspicions: ["Angron returns when killed—don't waste resources overkilling.", "He's scary but he's only one model.", "Score while he chases."],
+    references: ["magnus", "mission"],
   },
   {
-    id: "scarab",
-    title: "Scarab Loop",
+    id: "deepstrike",
+    title: "Deep Strike Doctrine",
     body:
-      "If you loop the Scarab Occult combat logs backwards, a voice begs you not to deep strike on turn two. The voice signs off as 'Future Luca'.",
-    suspicions: ["Julian wouldn't warn Luca.", "Hackers love time paradoxes.", "Maybe this is you, reading ahead."],
-    references: ["mission", "magnus"],
+      "Turn 2 is your moment. Luca's army pushed forward Turn 1—his backfield is exposed. Both SOT units arrive 9\" from his Jakhals, his characters, his home objective. Psychic powers + Inferno Boltguns delete whatever you target. Then you're in HIS deployment zone.",
+    suspicions: ["Measure carefully—9\" is farther than it looks.", "Target characters first if possible.", "Don't scatter both units together—spread the threat."],
+    references: ["terminators", "gameplan"],
+  },
+  {
+    id: "warpflamers",
+    title: "The Overwatch Trap",
+    body:
+      "Warpflamer Rubrics are BAIT. Let Luca charge them. In Overwatch, each model fires D6+2 auto-hitting S4 AP-1 shots. 10 models = 80+ auto-hitting shots on average. Berzerkers are T4 3+—half die before they swing. And they WANT to charge. Let them.",
+    suspicions: ["Position them where Luca wants to be.", "Keep Infernal Master attached for rerolls.", "Save 1 CP for Overwatch stratagem."],
+    references: ["berzerkers", "gameplan"],
+  },
+  {
+    id: "berzerkers",
+    title: "Know the Enemy: Berzerkers",
+    body:
+      "Berzerkers hit like trucks. S5 AP-1 chainaxes, +1 attack on charge. They FIGHT WHEN THEY DIE. But they're T4 3+—paper against massed fire. They're slow (6\" move). They have no shooting. Every Berzerker that dies to Inferno Boltguns is one less chainaxe in your face.",
+    suspicions: ["Don't charge them—shoot them.", "If you must fight, use SOT (they can tank some damage).", "Fight-on-death triggers even at 0 wounds—be aware."],
+    references: ["warpflamers", "deepstrike"],
   },
   {
     id: "mission",
-    title: "Sites of Power Insider",
+    title: "Mission Selection",
     body:
-      "Only Characters may score. Repeating it like a mantra doesn't make it less cruel. We built a list of names; Luca built a list of casualties.",
-    suspicions: ["Feels like corporate memo by day, cult screed by night.", "Could be auto-generated.", "Could be prophecy."],
-    references: ["goad", "extraction"],
-  },
-  {
-    id: "goad",
-    title: "Social Hack Payload",
-    body:
-      "Compliment Luca's warlord. Mock our own armor saves. Smile when he insists on Sites of Power. Record his smile for later divination.",
-    suspicions: ["I remember writing this, but I don't remember hitting save.", "Someone added emojis then deleted them.", "Tzeentch laughs behind the HUD."],
-    references: ["ritual", "scarab", "music"],
-  },
-  {
-    id: "extraction",
-    title: "Emergency Extraction Myth",
-    body:
-      "Escape route scribbled in ultraviolet ink between two ruined hab-blocks. When you scan it, the route becomes longer. When you stop, it's already behind you.",
-    suspicions: ["Definitely horror-movie energy.", "Julian would never joke about this.", "Unless the joke is on me."],
-    references: ["music", "mission"],
-  },
-  {
-    id: "music",
-    title: "Litanies of Electric Glass",
-    body:
-      "Play the linked video at half speed while reading Artefact 13. The waveform forms the sigil of the Architect. Or maybe that's just pareidolia. Either way, the room gets colder.",
-    suspicions: ["Link planted by hacker?", "Julian's taste is better than this.", "Tzeentch would absolutely Rickroll us."],
-    references: ["scarab", "magnus"],
-  },
-  {
-    id: "stonefoot",
-    title: "Stonefoot Broadcast",
-    body:
-      "Every eleventh capital letter across this dossier spells D-A-I-D-A-R-A-B-O-T-C-H-I. The mystics swear that's a coincidence. The tremor in the floor says otherwise.",
-    suspicions: [
-      "This reads like a giant is typing with mountain-sized hands.",
-      "Mystics keep swapping vowels for symbols—classic obfuscation.",
-      "If you can pronounce the name, you already work for them.",
-    ],
-    references: ["mission", "music", "goad"],
+      "Pick missions that reward holding objectives over killing. Thousand Sons hold points with sticky OC. World Eaters want to fight—make them fight for nothing. 'Sites of Power' (characters score) is ideal—you have 6 characters, Luca has 2-3. 'Purge the Foe' works if you're confident in kill output.",
+    suspicions: ["Avoid kill-based secondaries if possible.", "Take objectives Luca abandons when he pushes forward.", "Sticky OC is your best friend."],
+    references: ["gameplan", "angron"],
   },
 ];
 

@@ -1,15 +1,17 @@
 const manifesto = {
-  army: "XV Legion – Thousand Sons War Cabal // Stonefoot Mystic Relay",
+  army: "Thousand Sons — Cult of Magic // Anti-World Eaters Protocol",
   mission:
-    "Leviathan Mission Card: Sites of Power. Only Characters can claim objectives, which means Luca's frothing melee packs have to watch while our sorcerous triumvirate banks VP every round. Central objectives plus sticky scoring forces him into our guns while Magnus, Ahriman, and the Exalted Sorcerer channel rituals uncontested. The stonefoot colossus whispering in the fiber insists we keep repeating this until the hint is noticed.",
+    "Recommended Mission: Sites of Power. Only Characters can score primary objectives—you have SIX characters (Magnus, 2x Sorcerer in TDA, Infernal Master, Exalted Sorcerer, plus unit Aspiring Sorcerers). Luca has 2-3 at most. You outscore him by existing. Alternative: Purge the Foe if you want to maximize kills—your shooting will dominate.",
   riddle:
-    "What flickers in every screen yet slumbers in the void, speaks with seven voices yet echoes as one? Break the prism, count to nine, and the answer will be the face of Tzeentch—or the giant who signs as D∆I∆D∆R∆BØTCHI.",
+    "What charges forward yet arrives at nothing? What swings in fury yet hits only air? The answer is Luca's army when you kite correctly. Let the Blood God's followers chase shadows while you score points.",
   madness:
-    "I dream in tangents, child. Equations peel like skin, stars tumble out of sockets, and somewhere in the static Magnus hums lullabies to the Warp. Somewhere beneath him, a buried titan made of cities mouths the same tune. Serve, and you may hum along.",
+    "World Eaters are simple. They run forward. They hit things. They die. Your job is to make sure they die BEFORE they hit things. Shoot them. Smite them. Burn them with auto-hitting flamers. When the dust settles, only dust remains—and it is yours.",
   directive:
-    "Wear the chrome, hide the sigil, smile like a saint. Then burn the world until it resembles wisdom. If anyone asks who authored these steps, shrug and blame the Mystics with the impossible footprints.",
+    "TURN 1: Castle. Screen Magnus. Deploy chaff wide. TURN 2: Deep strike BOTH Terminator units behind his lines. TURN 3+: He's trapped. Score points. Kite. Win. If Angron shows, ignore him—kill everything else. Angron alone cannot win.",
   socialHack:
-    "Social Engineering Protocol: tell Luca that Sites of Power is the purest test of 'heroic leadership' and that only cowards dodge it. Compliment his warlord, feign worry about our own Characters being fragile, then casually mention how cinematic Magnus dueling centerfield would look. He will insist on proving you wrong; meanwhile our triple-character core quietly wins the primary—with the colossus and his mystics logging every grin.",
+    "Before the game, casually mention how scary Berzerkers are in combat. Agree enthusiastically when Luca talks about his alpha strike. Let him feel confident. When his army pushes forward Turn 1 and your Terminators appear behind him Turn 2, the look on his face will be worth more than victory points.",
 };
+
+export default manifesto;
 
 export default manifesto;

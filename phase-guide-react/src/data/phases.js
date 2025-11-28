@@ -5,13 +5,13 @@ const phases = [
     buttonLabel: "Command",
     title: "Command Phase",
     description:
-      "Harvest glittering CP embers, count the Cabal sigils, and whisper the mission code to the spirits in your implants. Every order is a vote in Tzeentch's parliament of madness, so script the turn before reality notices.",
+      "World Eaters have no psychic phase and minimal command tricks. This is where you pull ahead. Bank CP, count Cabal points, and remember: every turn Luca doesn't reach combat is a turn you're winning.",
     points: [
-      "Score +1 CP, verify mission dials, and mutter their value backwards.",
-      "Collect Cabal points (Magnus 4, Ahriman 3, others 1-2) and bank them like stolen suns.",
-      "Resolve upkeep buffs: Weaver of Fates, Doombolt priming, stratagem echoes.",
+      "Collect Cabal points: Magnus (4), Sorcerers in TDA (2 each), Infernal Master (1), Exalted Sorcerer (2).",
+      "Check if Terminators can deep strike this turn (T2+). Plan arrival zones behind Luca's push.",
+      "Score primary if holding objectives. Rubrics are sticky—don't forget!",
     ],
-    tip: "Tip: Decide the ritual before the ritual decides you—warp currents are jealous things.",
+    tip: "Tip: World Eaters want to rush. Every phase you delay combat, you win. Be patient, score points, let them come.",
   },
   {
     id: "movement",
@@ -19,13 +19,13 @@ const phases = [
     buttonLabel: "Movement",
     title: "Movement Phase",
     description:
-      "Herd your automata through neon ruins, trace glyphs in exhaust trails, and let Magnus surf the skyline in search of weak minds. Movement is the lie we tell physics, so tell it beautifully.",
+      "Movement wins this matchup. Magnus FLIES—stay 13\" from Berzerkers and they can never touch you. Screen with Screamers and Spawn. Make Luca waste movement chasing ghosts.",
     points: [
-      "March Rubric bricks with metronomic calm; unleash Enlightened to harry the alleys.",
-      "Stage Deep Strike / Temporal Surge plays two turns ahead.",
-      "Maintain spacing vs blast code; keep characters within look-out sigil arcs.",
+      "Magnus: Stay airborne, stay 13\"+ from threats. Smite range is 18\"—you don't need to be close.",
+      "Rhino: Advance midboard T1 to screen Magnus. Rubrics disembark T2 to claim objectives.",
+      "Screamers/Spawn: Spread wide. Force Berzerkers to charge THEM instead of valuable units.",
     ],
-    tip: "Tip: Freeze-frame the battlefield in your cortex; future-you will thank past-you's paranoia.",
+    tip: "Tip: If Luca charges your chaff, he's not charging Magnus. Trade 75pts of Screamers for a full turn of shooting.",
   },
   {
     id: "shooting",
@@ -33,13 +33,13 @@ const phases = [
     buttonLabel: "Shooting",
     title: "Shooting Phase",
     description:
-      "Let the guns speak in hexameters. Chain Cabal rituals to Forgefiend barrages, let flamers write glowing graffiti on Luca's armor, and watch probability lose its composure.",
+      "World Eaters have almost NO shooting. This phase is entirely yours. Spend Cabal points freely—Doombolt, Twist of Fate, Temporal Surge. Every dead Berzerker is one less chainaxe in your face.",
     points: [
-      "Spend Cabal points on Twist of Fate / Wrath before touching a die.",
-      "Resolve Forgefiend + Warpflamer shots first to incinerate screens.",
-      "Bank CP for Overwatch or phasic ploys you plan to echo later.",
+      "Priority targets: Characters first (Lord on Juggernaut removes terrain-ignore), then Berzerkers.",
+      "Inferno Boltguns from SOT: AP-2 shreds 3+ saves. Focus fire—half-dead squads still fight at full strength.",
+      "Warpflamers: Save Overwatch for his charge phase. D6+2 auto-hits EACH will delete charging Berzerkers.",
     ],
-    tip: "Tip: Declare all target strings like a prophet—the Warp prefers confident liars.",
+    tip: "Tip: Luca's army shrinks every shooting phase. Yours doesn't. Attrition is your friend.",
   },
   {
     id: "charge",
@@ -47,13 +47,13 @@ const phases = [
     buttonLabel: "Charge",
     title: "Charge Phase",
     description:
-      "Charge only when the voices chant in triplicate. Enlightened screens lash out, Scarabs blink behind prey, and Magnus selects which mortal gets to understand terror today.",
+      "YOU should rarely charge. Let LUCA charge into your Overwatch. Warpflamers auto-hit on Overwatch. Berzerkers are T4 3+—they die to massed flamers before swinging.",
     points: [
-      "Pre-measure heroic pockets; leave bait for interventions.",
-      "Keep the Exalted Sorcerer sheltered until the last microsecond.",
-      "Spend Cabal on Temporal Surge when the angle looks impossible.",
+      "Overwatch with Warpflamer Rubrics: Each model fires D6+2 auto-hitting S4 AP-1 shots. Devastating.",
+      "If SOT must charge (to trap a unit), ensure you have Cabal for Temporal Surge to position first.",
+      "Magnus should NEVER charge Berzerkers or Angron. Fly away, smite, repeat.",
     ],
-    tip: "Tip: Always leave a warp-width gap for pile-ins; cluttered zealots die twice.",
+    tip: "Tip: 'Fight on death' means Berzerkers swing when they die. Don't charge them—shoot them off the board instead.",
   },
   {
     id: "fight",
@@ -61,13 +61,13 @@ const phases = [
     buttonLabel: "Fight",
     title: "Fight Phase",
     description:
-      "In the fight phase you are half duelist, half mathematician. Sequence from doom to nuisance, let Scarabs tank interrupts, and keep Rubrics chanting even as blades flash.",
+      "If you're in combat with World Eaters, something went wrong. SOT can trade into weakened squads, but avoid fresh Berzerkers. Fight First and interrupts matter—sequence carefully.",
     points: [
-      "Audit Fight First / Fight Last triggers—Enlightened mortals win trades.",
-      "Declare Warptime, Veterans, or hexes before picking dice up.",
-      "Consolidate intelligently; OC is the true blade.",
+      "SOT fight well but Berzerkers fight better. Only engage damaged units or chaff.",
+      "If Magnus is tagged, Fall Back next turn (he can still shoot/cast after falling back with psychic powers).",
+      "World Eaters get +1 attack when charging—never let them charge if avoidable.",
     ],
-    tip: "Tip: Leave a single automaton hugging each objective—soulless loyalty scores VPs.",
+    tip: "Tip: Pile in toward objectives, consolidate onto points. OC wins games, not kills.",
   },
   {
     id: "battleshock",
@@ -75,13 +75,13 @@ const phases = [
     buttonLabel: "Battleshock",
     title: "Battleshock Phase",
     description:
-      "The battlefield exhales. Test Battleshock, bless sticky objectives, edit Luca's memory of the score. This is when the cult scribes its graffiti into causality.",
+      "World Eaters are often small elite squads—Battleshock rarely affects them. Focus on your own morale. Rubrics are sticky and auto-pass Battleshock on objectives you control.",
     points: [
-      "Roll Battleshock for depleted units; save CP for Insane Bravery if narrative demands.",
-      "Mark which objectives stay sticky via Rubrics / Magnus auras.",
-      "Recount remaining Cabal dice and casualties for next turn's ritual ledger.",
+      "Check which objectives are sticky-capped by Rubrics. They hold even if you leave.",
+      "Score VP—count carefully. World Eaters score by killing, you score by holding.",
+      "Recount Cabal points for next turn. Plan deep strike arrivals.",
     ],
-    tip: "Tip: Announce VP totals like a sermon; confusion is the enemy's only prayer.",
+    tip: "Tip: If you're ahead on points, play keep-away. Luca has to come to you—make him pay for every inch.",
   },
 ];
 
