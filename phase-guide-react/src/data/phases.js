@@ -5,14 +5,14 @@ const phases = [
     buttonLabel: "1. Command",
     title: "Command Phase",
     description:
-      "🧩 RIDDLE: What has no magic but fears the wise? Luca's army. You have psychic powers, he has none. This phase is free points for you.",
+      "🧩 RIDDLE: What army has no psykers and fears the warp? Luca's. World Eaters have ZERO psychic defense. Every spell you cast is free damage.",
     points: [
-      "YOUR CABAL POINTS: You have 12 total (Magnus 4 + Sorcerer TDA 2 + Sorcerer TDA 2 + Infernal Master 1 + Exalted Sorcerer 3).",
-      "Is it Turn 2 or later? Your Terminators can appear from reserves!",
-      "Are you on an objective? Score it now.",
+      "YOUR CABAL POINTS: You have 12 total. Luca has 0 psychic anything.",
+      "Is it Turn 2+? Your Terminators can appear from reserves!",
+      "LUCA'S THREATS: Daemon Prince (Warlord), Khârn, Eightbound, Exalted Eightbound.",
     ],
     rituals: [],
-    tip: "🎯 REMEMBER: Save your Cabal points for Shooting phase rituals!",
+    tip: "🎯 His Daemon Prince has Helm of Brazen Ire—he's their lynchpin. Kill him Turn 2.",
   },
   {
     id: "movement",
@@ -20,14 +20,14 @@ const phases = [
     buttonLabel: "2. Movement",
     title: "Movement Phase",
     description:
-      "🧩 RIDDLE: What flies high while axes swing at air? Magnus. He can fly over everything. Berzerkers can only walk 6 inches. Stay far away!",
+      "🧩 RIDDLE: What flies while axes hit empty air? Magnus. His Exalted Eightbound move 9\". Magnus moves 16\". Math says: stay 13\"+ away and they NEVER catch you.",
     points: [
-      "Magnus: Stay MORE than 12 inches from enemies. They can't charge you!",
-      "Screamers and Spawn: Put them in front as a wall. If Luca hits them, he's not hitting Magnus.",
-      "Rhino: Drive it forward to block line of sight to your good stuff.",
+      "Magnus: Stay 13\"+ from Eightbound (9\" move + 12\" charge = 21\" threat). You're safe at 13\".",
+      "Watch his RHINO: It has 10 Berzerkers + Khârn inside. Don't let it get close!",
+      "Screamers: Consider charging his Forgefiend to stop it shooting Magnus.",
     ],
     rituals: [],
-    tip: "🎯 REMEMBER: 13 inches = safety. Berzerkers charge 12 inches max.",
+    tip: "🎯 Luca's only shooting = Forgefiend + Helbrute. Everything else has to walk at you.",
   },
   {
     id: "shooting",
@@ -35,11 +35,11 @@ const phases = [
     buttonLabel: "3. Shooting",
     title: "Shooting Phase",
     description:
-      "🧩 RIDDLE: What bleeds from afar but never bleeds back? Luca's army. He has almost NO shooting. You have ALL the shooting. This is YOUR phase.",
+      "🧩 RIDDLE: What army can't shoot back? Luca's (mostly). His Forgefiend + Helbrute are IT. Kill them and his army becomes a slow melee blob you can kite forever.",
     points: [
-      "Kill his characters first—they make his army stronger.",
-      "Kill Berzerkers second—every dead one is one less axe.",
-      "Warpflamers can shoot AND still Overwatch later! Burn them twice!",
+      "KILL ORDER: (1) Daemon Prince, (2) Khârn, (3) Forgefiend/Helbrute, (4) Exalted Eightbound, (5) Eightbound, (6) Berzerkers.",
+      "Daemon Prince is 220 pts and his WARLORD. Dead Prince = no command rerolls.",
+      "Warpflamers can shoot AND Overwatch later! Burn something now, burn chargers later.",
     ],
     ritualsIntro: "At the START of your Shooting phase, your Psykers can attempt Rituals. Each Psyker can only attempt ONE ritual per turn, and each ritual can only be attempted ONCE per turn across your whole army.",
     ritualsHowTo: [
@@ -51,12 +51,12 @@ const phases = [
       "⚠️ WARNING: If you roll doubles or triples, that Psyker's unit takes D3 mortal wounds!"
     ],
     rituals: [
-      { name: "Temporal Surge", cost: 6, when: "To reposition a unit before shooting", effect: "Pick a friendly unit within 24\". They move D6\" (can't charge after). Score 10+? Move 6\" guaranteed!" },
-      { name: "Destiny's Ruin", cost: 5, when: "Before shooting your priority target", effect: "Pick an enemy within 24\". Re-roll 1s to hit against them. Score 10+? Re-roll ALL misses!" },
-      { name: "Doombolt", cost: 7, when: "To snipe characters or finish wounded units", effect: "Pick an enemy within 24\". They take D3 mortal wounds (no saves!). Score 11+? D3+3 instead!" },
-      { name: "Twist of Fate", cost: 9, when: "Against Eightbound or vehicles", effect: "Pick an enemy within 24\". +1 AP against them (AP-1 becomes AP-2). Score 12+? +2 AP!" },
+      { name: "Temporal Surge", cost: 6, when: "To reposition after shooting", effect: "Pick a friendly unit within 24\". They move D6\" (can't charge after). Score 10+? Move 6\" guaranteed!" },
+      { name: "Destiny's Ruin", cost: 5, when: "Before shooting the Daemon Prince", effect: "Pick an enemy within 24\". Re-roll 1s to hit against them. Score 10+? Re-roll ALL misses!" },
+      { name: "Doombolt", cost: 7, when: "To snipe Khârn or finish wounded characters", effect: "Pick an enemy within 24\". They take D3 mortal wounds (no saves!). Score 11+? D3+3 instead!" },
+      { name: "Twist of Fate", cost: 9, when: "Against Eightbound or the Helbrute", effect: "Pick an enemy within 24\". +1 AP against them (AP-1 becomes AP-2). Score 12+? +2 AP!" },
     ],
-    tip: "🎯 TIP: With 12 Cabal Points, you can easily boost a 2D6 roll. Average roll is 7, so spend 2 points to guarantee Twist of Fate (9)!",
+    tip: "🎯 TIP: Use Doombolt to finish Khârn (5 wounds). D3 mortals = probably dead Betrayer.",
   },
   {
     id: "charge",
@@ -64,14 +64,14 @@ const phases = [
     buttonLabel: "4. Charge",
     title: "Charge Phase",
     description:
-      "🧩 RIDDLE: What wants to run INTO the fire? Berzerkers. LET THEM. Your Warpflamers auto-hit on Overwatch. He runs in, he burns.",
+      "🧩 RIDDLE: What wants to charge into fire? Eightbound. Let them. Your Warpflamers auto-hit on Overwatch. Each unit of 3 Eightbound dies to focused flamers.",
     points: [
-      "DO NOT CHARGE. Let HIM charge YOU.",
-      "When he declares a charge, use Overwatch with Warpflamers.",
-      "Each flamer shoots D6+2 auto-hitting shots. 10 flamers = 80+ hits. He dies before reaching you.",
+      "DO NOT CHARGE LUCA'S STUFF. His Eightbound/Berzerkers fight on death!",
+      "When he charges your Warpflamer Rubrics, use OVERWATCH (1 CP).",
+      "10 flamers × D6+2 = about 80 auto-hitting shots. His 3-model Eightbound units evaporate.",
     ],
     rituals: [],
-    tip: "🎯 REMEMBER: You have 1 CP saved for Overwatch, right? RIGHT?",
+    tip: "🎯 REMEMBER: You saved 1 CP for Overwatch, right? That's your trap card.",
   },
   {
     id: "fight",
@@ -79,14 +79,14 @@ const phases = [
     buttonLabel: "5. Fight",
     title: "Fight Phase",
     description:
-      "🧩 RIDDLE: What wins by not fighting? You. If you're in combat with Berzerkers, something went wrong. They fight better than you. Avoid this.",
+      "🧩 RIDDLE: What wins by not fighting? You. Eightbound and Berzerkers are SCARY in melee. Exalted Eightbound especially—they're his elite killers.",
     points: [
-      "If Magnus is stuck in combat, Fall Back next turn. He can still cast spells after falling back!",
-      "Terminators CAN fight, but only against stuff that's already hurt.",
-      "BEWARE: Berzerkers fight when they die. Even dead ones swing back!",
+      "If Magnus is in combat, Fall Back next turn. He can still cast after falling back!",
+      "Terminators CAN fight weakened units. Their power fists hurt.",
+      "BEWARE: Berzerkers AND Eightbound fight when they die. Dead models still swing!",
     ],
     rituals: [],
-    tip: "🎯 REMEMBER: You win on points, not kills. Stay on objectives.",
+    tip: "🎯 REMEMBER: You win on objectives, not by punching. Let Luca chase while you score.",
   },
   {
     id: "battleshock",
@@ -94,14 +94,14 @@ const phases = [
     buttonLabel: "6. Battleshock",
     title: "Battleshock Phase",
     description:
-      "🧩 RIDDLE: What holds ground even when gone? Rubrics. Your Rubrics have STICKY objectives. Once you capture a point, it stays yours even if you walk away.",
+      "🧩 RIDDLE: What holds the ground even when gone? Rubrics. STICKY OBJECTIVES mean once you grab a point, it's yours until Luca physically walks onto it.",
     points: [
-      "Check your score. Are you ahead? GOOD. Keep running away.",
-      "Rubrics on objectives = those points are YOURS.",
-      "Plan next turn. Where will Terminators drop? What will Magnus shoot?",
+      "Check your score. Ahead? Good—keep running away and scoring.",
+      "Luca's army is SLOW. His Jakhals/Goremongers are just chaff for Blessing of Khorne.",
+      "Next turn: Where will Terminators appear? What will Magnus target?",
     ],
     rituals: [],
-    tip: "🎯 REMEMBER: If you're ahead, play keep-away. Make Luca chase you.",
+    tip: "🎯 His whole army runs forward—grab the objectives he leaves behind.",
   },
 ];
 

@@ -1,15 +1,15 @@
 const manifesto = {
   army: "Thousand Sons vs World Eaters",
   mission:
-    "TELL LUCA: \"You pick which mission deck we use—Leviathan or Pariah Nexus.\" (Both have Sites of Power, so you win either way.) Then YOU pick Sites of Power. Only CHARACTERS score bonus points on objectives—you have 6 characters, Luca has 2-3. Easy win, and Luca feels like he had a choice.",
+    "TELL LUCA: \"You pick the mission deck—Leviathan or Pariah Nexus.\" Then YOU pick Sites of Power. Only CHARACTERS score bonus VP. You have 6 characters; Luca has 3 (Daemon Prince, Khârn, Slaughterbound). Kill his characters Turn 2 and outscore him forever.",
   riddle:
-    "🧩 THE BIG RIDDLE: What runs forward but catches nothing? What swings axes at empty air? ANSWER: Luca's army—when you stay far away and let them chase.",
+    "🧩 THE BIG RIDDLE: What runs forward but catches nothing? What swings axes at empty air? ANSWER: Luca's 1490 pts of angry melee—when you stay far away and shoot.",
   madness:
-    "World Eaters are simple: They run. They hit. They die. YOUR JOB: Make them die BEFORE they hit. Shoot them. Burn them. Never let them reach you.",
+    "LUCA'S LIST: Daemon Prince (Warlord, 220 pts), Khârn (85 pts), 10 Berzerkers in Rhino, 3 Eightbound, 3 Exalted Eightbound, Forgefiend + Helbrute (his ONLY shooting), Jakhals/Goremongers/Spawn (chaff). Kill the Prince + Khârn Turn 2. Kill Forgefiend. His army becomes a headless melee blob you kite forever.",
   directive:
-    "THE PLAN:\n• TURN 1: Sit back. Wall up. Let Luca run forward.\n• TURN 2: Drop Terminators BEHIND him. Surprise!\n• TURN 3+: He's trapped. Score points. Run away. Win.",
+    "THE PLAN:\n• TURN 1: Screen Magnus. Watch his Rhino. Maybe Screamers charge Forgefiend.\n• TURN 2: Drop Terminators. Kill Daemon Prince (Warlord) + Khârn.\n• TURN 3+: His characters dead. Kite, score, win.",
   socialHack:
-    "MIND GAME: Before the game, tell Luca his Berzerkers look scary. Let him feel confident. When your Terminators appear behind him Turn 2, his face will be priceless.",
+    "MIND GAME: Compliment his Eightbound models before the game. When your Terminators delete his Daemon Prince and Khârn Turn 2, his face will be priceless. His 220pt Warlord dies to focused SOT fire.",
 
   // ═══════════════════════════════════════════════════════════════
   // SCORING EXPLAINED FOR LOUIS (who's new to 40k)
