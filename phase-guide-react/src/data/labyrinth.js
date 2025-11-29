@@ -1,75 +1,91 @@
 const labyrinthNodes = [
   {
     id: "gameplan",
-    title: "🧩 The Trap",
+    title: "🔮 Grand Coven",
     body:
-      "RIDDLE: What runs forward into a closing cage? Luca's army.\n\nLUCA'S 2000 PTS (likely):\n• Daemon Prince (Warlord) + Khârn + Slaughterbound\n• 10 Berzerkers in Rhino (maybe more squads)\n• Eightbound + Exalted Eightbound (maybe 6 of each!)\n• Forgefiend + Helbrute + maybe more vehicles\n• Jakhals, Goremongers, Spawn (chaff)\n\nTHE PLAN: Let him push. Drop Terminators behind. Trap closed.",
-    suspicions: ["Kill his Daemon Prince Turn 2—he's the Warlord.", "Expect MORE Eightbound at 2000 pts.", "His chaff (Jakhals/Goremongers) feeds Blessing of Khorne."],
-    references: ["terminators", "magnus", "mission"],
+      "RIDDLE: What gets stronger every phase? Your Grand Coven army.\n\nKINDRED SORCERY:\n• DEVASTATING WOUNDS (Turn 1 vs Forgefiends!)\n• +1 TO WOUND (Turn 2, kill characters!)\n• +6\" RANGE (if you need safe shooting)\n\nVS EAT TRASH: Kill his 2 Forgefiends Turn 1, then assassinate characters Turn 2!",
+    suspicions: ["Devastating Wounds Turn 1 vs Forgefiends!", "+1 to Wound Turn 2 when Terminators drop!", "He has 4 characters—hunt them all!"],
+    references: ["terminators", "magnus", "forgefiend"],
+  },
+  {
+    id: "ahriman",
+    title: "📜 Ahriman",
+    body:
+      "RIDDLE: What redeploys 3 units and boosts rituals? Ahriman.\n\nSCRYER OF FATES: After deployment, redeploy up to 3 units! Reposition away from his Eightbound or toward his Forgefiends.\n\nARCH-SORCERER: +1 to Psychic tests when Channeling the Warp. Your rituals succeed more often!\n\nAttach him to 10 Rubrics for a powerful firebase!",
+    suspicions: ["Scryer of Fates: Redeploy 3 units after deployment!", "Arch-Sorcerer: +1 to Ritual tests!", "He's BS2+ so he rarely misses."],
+    references: ["gameplan", "magnus"],
   },
   {
     id: "terminators",
-    title: "🔨 Two Hammers",
+    title: "🔨 The Hammer",
     body:
-      "RIDDLE: What strikes from two sides at once? Your Terminators.\n\n10-MAN SQUAD: Target his Daemon Prince (220 pts, Warlord).\n5-MAN SQUAD: Target Khârn the Betrayer (85 pts).\n\nBoth characters dead Turn 2 = his army has no leaders. Berzerkers without Khârn are just angry dudes.",
-    suspicions: ["Daemon Prince has Helm of Brazen Ire—PRIORITY TARGET.", "Khârn only has 5 wounds. Easy kill.", "Drop them far apart so Luca can't respond to both."],
-    references: ["gameplan", "deepstrike"],
+      "RIDDLE: What strikes from behind with +1 to wound? Your Terminators.\n\nTURN 2:\n• 10 SOT → DELETE Daemon Prince (wound on 4s instead of 5s!)\n• 5 SOT → DELETE Khârn OR Lord on Juggernaut!\n\nHis army has 4 characters. Kill the Prince (Warlord) and Khârn first. Juggerlord + Slaughterbound die later!",
+    suspicions: ["Pick Psychic Maelstrom (+1 Wound) when they drop.", "10 SOT have 20+ Inferno bolts = dead characters.", "Umbralefic Crystal = escape button!"],
+    references: ["gameplan", "deepstrike", "enhancements"],
   },
   {
     id: "magnus",
-    title: "🦅 The Flying Giant",
+    title: "🦅 The Crimson King",
     body:
-      "RIDDLE: What floats above while axes swing at nothing? Magnus.\n\nExalted Eightbound (his fastest) move 9\".\nMagnus flies 16\".\nStay 13\"+ away = NOTHING catches you.\n\nOnly his Forgefiend + Helbrute can hurt Magnus. Kill them and Magnus is invincible.",
-    suspicions: ["Screamers can charge Forgefiend Turn 1 to tie it up.", "13 inches = the magic safety number.", "His Rhino is fast—watch it. Berzerkers inside!"],
-    references: ["forgefiend", "gameplan"],
+      "RIDDLE: What deletes Forgefiends Turn 1? Magnus with Devastating Wounds.\n\nMAGNUS IS YOUR VEHICLE KILLER:\n• D6+6 Psychic shots per turn\n• With DEVASTATING WOUNDS, 6s to wound = mortals bypass armor!\n• He can one-shot a Forgefiend Turn 1!\n\nTurn 1 priority: Kill at least ONE Forgefiend. His shooting threat vanishes!",
+    suspicions: ["Devastating Wounds vs Forgefiends Turn 1!", "His melee is BRUTAL with +1 to Wound!", "Keep YOUR Spawn in front to screen him."],
+    references: ["gameplan", "forgefiend"],
   },
   {
     id: "forgefiend",
-    title: "🔫 His Only Guns",
+    title: "🔫 His Big Guns",
     body:
-      "RIDDLE: What dies and leaves an army blind? His Forgefiend.\n\nLUCA'S SHOOTING:\n• Forgefiend (150 pts) - 3 Ectoplasma cannons\n• Helbrute (120 pts) - Heavy flamer + hammer\n\nThat's IT. Kill both and his entire army has to WALK at you with no ranged threat. Magnus and Terminators freely shoot forever.",
-    suspicions: ["Screamers can tie up Forgefiend Turn 1.", "Helbrute wants melee—don't let it get close.", "Once both die, the game is basically won."],
+      "RIDDLE: What dies to Magnus with one buff? BOTH Forgefiends.\n\nEAT TRASH'S SHOOTING:\n• TWO Forgefiends (340 pts total!) - 6 Ectoplasma cannons\n• This is his ONLY real ranged threat!\n\nTURN 1: Use DEVASTATING WOUNDS. Magnus shoots one Forgefiend. Your Terminators or Ahriman finish the other. His shooting disappears!",
+    suspicions: ["Devastating Wounds bypasses armor saves!", "Magnus can one-shot a Forgefiend.", "Kill both Turn 1-2 and he has no guns!"],
     references: ["magnus", "gameplan"],
   },
   {
     id: "eightbound",
     title: "😈 The Elite Killers",
     body:
-      "RIDDLE: What hits like a truck but walks into fire? Eightbound.\n\nAt 2000 pts, expect MORE:\n• 3-6 Eightbound\n• 3-6 Exalted Eightbound - THESE ARE SCARIER\n\nExalted move 9\", hit harder. Both fight on death. Solution: Warpflamer Overwatch. 10 flamers = 80 auto-hits. Even 6-model squads get shredded.",
-    suspicions: ["At 2000 pts he probably has 6 of each!", "They FIGHT when they die—never charge them!", "Overwatch is your answer to ALL of them."],
-    references: ["warpflamers", "berzerkers"],
+      "RIDDLE: What wastes time on Chaos Spawn? Eightbound.\n\n6 ELITE MELEE KILLERS:\n• 3 Eightbound (135 pts)\n• 3 Exalted Eightbound (140 pts)\n\nDon't let them reach Magnus or Terminators! Screen with YOUR Spawn. Let his elites waste attacks on cheap bodies.",
+    suspicions: ["They FIGHT when they die—never charge them!", "Overwatch with Devastating Wounds active!", "Your Spawn die so Psykers survive."],
+    references: ["flamers", "terminators", "enhancements"],
   },
   {
     id: "deepstrike",
-    title: "⚡ The Surprise",
+    title: "⚡ Character Assassination",
     body:
-      "RIDDLE: What appears when the enemy looks away? Your Terminators.\n\nTURN 2 TARGETS:\n• 10 SOT → Daemon Prince (his Warlord, 220 pts)\n• 5 SOT → Khârn (his force multiplier, 85 pts)\n\nBoth die to focused fire. His army loses all leadership. His Rhino full of Berzerkers is stuck in midfield with no support.",
-    suspicions: ["Drop 9\" away—measure twice!", "Kill characters FIRST, then shoot chaff.", "His Jakhals backfield guard is only 65 pts—sweep them."],
+      "RIDDLE: What appears with +1 to wound and deletes characters? BOTH Terminator squads.\n\nTURN 2:\n• Declare PSYCHIC MAELSTROM (+1 to Wound)\n• 10 SOT drop → DELETE Daemon Prince (Helm of Brazen Ire doesn't save him!)\n• 5 SOT drop → DELETE Khârn OR Lord on Juggernaut\n\n4 characters total. Kill 2 per turn. Army crumbles!",
+    suspicions: ["Drop 9\" away—measure twice!", "Psychic Maelstrom makes your shooting brutal.", "Kill order: Daemon Prince → Khârn → Juggerlord → Slaughterbound!"],
+    references: ["terminators", "gameplan", "enhancements"],
+  },
+  {
+    id: "flamers",
+    title: "🔥 The Fire Trap",
+    body:
+      "RIDDLE: What punishes every charge with mortals? Warpflamers with Devastating Wounds.\n\nPosition 5 Rubrics with Warpflamers where his Eightbound want to charge.\nWhen Eightbound charge:\n• Pick DEVASTATING WOUNDS at start of Charge phase\n• Declare OVERWATCH (1 CP)\n• 5 Warpflamers × D6 = ~17.5 auto-hits\n• 6s to wound = MORTAL WOUNDS!",
+    suspicions: ["SAVE 1 CP for Overwatch!", "Pick Devastating Wounds before his Charge phase!", "Position them to cover charge lanes."],
+    references: ["eightbound", "gameplan"],
+  },
+  {
+    id: "enhancements",
+    title: "💎 Your Enhancement",
+    body:
+      "YOUR ENHANCEMENT (20 pts):\n\n• UMBRALEFIC CRYSTAL (20 pts) - Sorcerer in TDA with 10 SOT\n  Once per battle: Remove unit, redeploy 9\"+ from enemies.\n  USE WHEN: His Eightbound or Berzerkers catch your Terminators!\n\nHIS ENHANCEMENT:\n• Helm of Brazen Ire on Daemon Prince - 4++ invuln. Still dies to massed Terminator fire!",
+    suspicions: ["Umbralefic Crystal = ESCAPE for 460+ pts of Terminators!", "His Helm of Brazen Ire gives 4++ but not enough!", "Use +1 Wound to punch through his saves!"],
     references: ["terminators", "gameplan"],
   },
   {
-    id: "warpflamers",
-    title: "🔥 The Fire Trap",
+    id: "juggerlord",
+    title: "🐂 Lord on Juggernaut",
     body:
-      "RIDDLE: What wants to be charged? Your Warpflamer Rubrics.\n\nWhen Eightbound or Berzerkers charge:\n• Declare OVERWATCH (1 CP)\n• 10 Warpflamers fire D6+2 each = ~80 hits\n• S4 AP-1 D1, AUTO-HIT\n• His 3-model Eightbound units? Dead. His 10 Berzerkers? Halved.",
-    suspicions: ["SAVE 1 CP for Overwatch—it's your trap.", "Position Rubrics where Luca WANTS to charge.", "All Is Dust gives +1 save vs D1 attacks (most of his stuff)."],
-    references: ["eightbound", "berzerkers"],
-  },
-  {
-    id: "berzerkers",
-    title: "⚔️ The Rhino Bomb",
-    body:
-      "RIDDLE: What rides in a metal box full of death? 10 Berzerkers + Khârn.\n\nLuca's Rhino (85 pts) carries:\n• 10 Khorne Berzerkers (180 pts)\n• Probably Khârn the Betrayer (85 pts)\n\nIf the Rhino reaches you and disgorges, you're in trouble. Solution: Kill the Rhino early OR screen with Spawn/Screamers so they can't get close.",
-    suspicions: ["Rhino moves 12\". Watch its advance!", "Kill the Rhino or lock it in combat.", "If they get out, Warpflamer Overwatch is your only hope."],
-    references: ["warpflamers", "gameplan"],
+      "RIDDLE: What has 8\" move and Favoured of Khorne? The Lord on Juggernaut.\n\nTHE FLANKER:\n• 8\" move + charge range = threatens your flanks\n• Favoured of Khorne enhancement = Fight on death!\n• He's fast enough to reach your backline!\n\nSOLUTION: 5 SOT with +1 Wound delete him. He only has 6 wounds. Don't let him reach Magnus!",
+    suspicions: ["8\" move makes him faster than Berzerkers!", "Favoured of Khorne = Fights when killed!", "5 SOT can kill him easily with +1 Wound!"],
+    references: ["terminators", "deepstrike"],
   },
   {
     id: "mission",
     title: "🏆 How to Win",
     body:
-      "RIDDLE: What wins without killing? Holding objectives.\n\nSITES OF POWER: Only CHARACTERS score bonus VP.\n• You have 6 characters (Magnus, 2 Sorcerers TDA, Infernal Master, Exalted Sorcerer on Disc, etc.)\n• Luca has 3 (Daemon Prince, Khârn, Slaughterbound)\n\nKill his characters Turn 2. Now you outscore him every turn just by existing.",
-    suspicions: ["His characters are his weakness—kill them!", "Sticky objectives = grab and leave.", "Points win games, not kills."],
-    references: ["gameplan", "terminators"],
+      "RIDDLE: What wins by shooting and scoring? You.\n\nVS EAT TRASH BEAT TRASH:\n• Turn 1: DEVASTATING WOUNDS. Magnus kills Forgefiend. Shoot the other!\n• Turn 2: PSYCHIC MAELSTROM. Terminators delete Daemon Prince + Khârn.\n• Turn 3+: His headless army flails. Kill Juggerlord + Slaughterbound.\n\nHis 2 Forgefiends are his only guns. Delete them = he walks at you helplessly!",
+    suspicions: ["Kill Forgefiends Turn 1—no more shooting threat!", "Kill Prince + Khârn Turn 2—his army loses buffs!", "His Jakhals are cheap—don't let them steal objectives!"],
+    references: ["gameplan", "forgefiend", "terminators"],
   },
 ];
 
