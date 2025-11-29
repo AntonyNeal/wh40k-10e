@@ -7,7 +7,7 @@ const manifesto = {
   madness:
     "EAT TRASH BEAT TRASH: Daemon Prince (Warlord) + Khârn + Lord on Juggernaut + Slaughterbound. 2x Forgefiend (340 pts shooting!), Eightbound + Exalted Eightbound, 20 Berzerkers, 6 Chaos Spawn screens. NEW PLAN: Devastating Wounds Turn 1 kills Forgefiends. +1 Wound Turn 2 kills characters!",
   directive:
-    "THE GRAND COVEN STRATEGY:\n• TURN 1: DEVASTATING WOUNDS! Magnus deletes Forgefiends. His shooting disappears.\n• TURN 2: PSYCHIC MAELSTROM (+1 Wound). Terminators drop and DELETE Daemon Prince AND Khârn!\n• TURN 3+: Disc Sorcerers scorch HIS objectives. Your Psykers hold YOURS. Headless army crumbles.",
+    "THE GRAND COVEN STRATEGY:\n• TURN 1: DEVASTATING WOUNDS! Magnus deletes Forgefiends. 5 Terminators drop to pressure!\n• TURN 2: PSYCHIC MAELSTROM (+1 Wound). Second 5 Terminators drop—DELETE Daemon Prince + Khârn!\n• TURN 3+: Disc Sorcerers scorch HIS objectives. Your Psykers hold YOURS. Headless army crumbles.",
   socialHack:
     "MIND GAME: Scorched Earth forces HIM to come to you. He has to stop you scorching his objectives—but his army is slow! Your Disc Sorcerers with 12\" FLY run circles around his Berzerkers.",
 
@@ -54,7 +54,8 @@ const manifesto = {
         "AHRIMAN + 10 RUBRICS: Your corner, in cover. They hold YOUR objectives.",
         "TWO EXALTED ON DISCS: Ready to zoom across and scorch HIS objectives!",
         "CHAOS SPAWN: Front screen. They die so Magnus lives.",
-        "TERMINATORS IN RESERVE: Drop Turn 2 to assassinate characters!"
+        "5 TERMINATORS: Drop Turn 1 near objectives to apply immediate pressure!",
+        "5 TERMINATORS: Drop Turn 2 with +1 Wound active to assassinate characters!"
       ]
     }
   },
@@ -169,8 +170,8 @@ const manifesto = {
     turnByTurn: {
       title: "📊 Your VP Total Each Turn",
       turns: [
-        { turn: 1, total: 0, note: "No scoring Turn 1. Kill Forgefiends with Devastating Wounds!" },
-        { turn: 2, total: 10, note: "Terminators drop, kill characters. Disc Sorcerers zoom forward." },
+        { turn: 1, total: 0, note: "No scoring Turn 1. Kill Forgefiends with Dev Wounds! 5 SOT drop to pressure!" },
+        { turn: 2, total: 10, note: "Second 5 SOT drop with +1 Wound. Delete characters! Disc Sorcerers zoom forward." },
         { turn: 3, total: 22, note: "Start scorching HIS objectives. He's losing options!" },
         { turn: 4, total: 34, note: "His headless army flails. You control the board." },
         { turn: 5, total: 45, note: "Scorched Earth victory. His objectives are gone. GG Luca!" }

@@ -14,6 +14,25 @@ const PhaseCard = ({ phase, isActive }) => {
         ))}
       </ul>
       
+      {/* STRATAGEMS FOR THIS PHASE */}
+      {phase.stratagems && phase.stratagems.length > 0 && (
+        <div className="phase-card__stratagems">
+          <h3>⚡ Stratagems This Phase</h3>
+          <div className="phase-card__stratagem-list">
+            {phase.stratagems.map((strat) => (
+              <div key={strat.name} className="phase-card__stratagem">
+                <div className="phase-card__stratagem-header">
+                  <span className="phase-card__stratagem-name">{strat.name}</span>
+                  <span className="phase-card__stratagem-cost">{strat.cost}</span>
+                </div>
+                <p className="phase-card__stratagem-when">⏰ {strat.when}</p>
+                <p className="phase-card__stratagem-effect">→ {strat.effect}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      
       {phase.rituals && phase.rituals.length > 0 && (
         <div className="phase-card__rituals">
           <h3>🔮 Cabal Rituals</h3>

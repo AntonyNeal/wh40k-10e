@@ -3,6 +3,7 @@ import manifesto from "../data/manifesto.js";
 
 const Initiation = () => {
   const scoring = manifesto.scoringBasics;
+  const grandCoven = manifesto.grandCovenExplained;
 
   return (
     <section className="initiation" aria-label="Battle briefing">
@@ -29,6 +30,43 @@ const Initiation = () => {
           <p className="eyebrow">Psychological Warfare</p>
           <p className="initiation__text">{manifesto.socialHack}</p>
         </article>
+      </div>
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* KINDRED SORCERY EXPLANATION */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      <div className="kindred-sorcery">
+        <h2 className="kindred-sorcery__title">{grandCoven.title}</h2>
+        <p className="kindred-sorcery__concept">{grandCoven.concept}</p>
+
+        <div className="kindred-sorcery__rules">
+          {grandCoven.rules.map((rule, i) => (
+            <div key={i} className="kindred-sorcery__rule">
+              <h4 className="kindred-sorcery__rule-name">{rule.name}</h4>
+              <p className="kindred-sorcery__rule-effect">{rule.effect}</p>
+              <p className="kindred-sorcery__rule-simple">💡 {rule.simple}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="kindred-sorcery__when">
+          <h3>{grandCoven.whenToUse.title}</h3>
+          <ul className="kindred-sorcery__tips">
+            {grandCoven.whenToUse.tips.map((tip, i) => (
+              <li key={i}>{tip}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="kindred-sorcery__enhancements">
+          <h3>💎 Your Enhancements</h3>
+          {grandCoven.keyEnhancements.map((enh, i) => (
+            <div key={i} className="kindred-sorcery__enhancement">
+              <strong>{enh.name}</strong> — {enh.bearer}
+              <p>{enh.effect}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* ════════════════════════════════════════════════════════════ */}

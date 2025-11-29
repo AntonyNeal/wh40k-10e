@@ -1368,6 +1368,220 @@ a:focus-visible {
   box-shadow: 0 4px 20px rgba(255, 56, 100, 0.4);
 }
 
+/* ═══════════════════════════════════════════════════════════════ */
+/* KINDRED SORCERY SECTION */
+/* ═══════════════════════════════════════════════════════════════ */
+.kindred-sorcery {
+  margin-top: 2rem;
+  padding: clamp(1rem, 4vw, 2rem);
+  background: linear-gradient(135deg, rgba(124, 43, 217, 0.2), rgba(255, 56, 100, 0.1));
+  border: 2px solid rgba(124, 43, 217, 0.5);
+  border-radius: 1rem;
+  max-width: 100%;
+}
+
+.kindred-sorcery__title {
+  font-size: 1.75rem;
+  color: var(--accent-secondary);
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.kindred-sorcery__concept {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kindred-sorcery__rules {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .kindred-sorcery__rules {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.kindred-sorcery__rule {
+  padding: 1.25rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(124, 43, 217, 0.4);
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.kindred-sorcery__rule:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.kindred-sorcery__rule-name {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.kindred-sorcery__rule-effect {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--accent-secondary);
+  font-style: italic;
+}
+
+.kindred-sorcery__rule-simple {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--accent-strong);
+  padding: 0.5rem;
+  background: rgba(255, 154, 118, 0.1);
+  border-radius: 0.25rem;
+}
+
+.kindred-sorcery__when {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 56, 100, 0.1);
+  border: 1px solid rgba(255, 56, 100, 0.3);
+  border-radius: 0.5rem;
+}
+
+.kindred-sorcery__when h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.kindred-sorcery__tips {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.kindred-sorcery__tips li {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.kindred-sorcery__tips li::marker {
+  color: var(--accent);
+}
+
+.kindred-sorcery__enhancements {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+.kindred-sorcery__enhancements h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  color: #ffd700;
+}
+
+.kindred-sorcery__enhancement {
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.kindred-sorcery__enhancement:last-child {
+  margin-bottom: 0;
+}
+
+.kindred-sorcery__enhancement strong {
+  color: #ffd700;
+}
+
+.kindred-sorcery__enhancement p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* STRATAGEM CARDS IN PHASE */
+/* ═══════════════════════════════════════════════════════════════ */
+.phase-card__stratagems {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 56, 100, 0.12);
+  border: 1px solid rgba(255, 56, 100, 0.4);
+  border-radius: 0.75rem;
+}
+
+.phase-card__stratagems h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.phase-card__stratagem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.phase-card__stratagem {
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  border-left: 3px solid var(--accent);
+}
+
+.phase-card__stratagem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.phase-card__stratagem-name {
+  font-weight: 700;
+  color: #fff;
+}
+
+.phase-card__stratagem-cost {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  background: var(--accent);
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.phase-card__stratagem-when {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+  color: var(--accent-strong);
+}
+
+.phase-card__stratagem-effect {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.phase-card__stratagem-vs {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-style: italic;
+}
+
 @media (max-width: 640px) {
   .phase-card {
     min-height: auto;
